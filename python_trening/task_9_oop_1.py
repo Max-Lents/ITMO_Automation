@@ -1,55 +1,49 @@
-class Input:
+
+from task_9_cheks import Checks
+
+class Input(Checks):
 
     def __init__(self, text, loc):
+        super().__init__(loc)
         self.text = text
         self.loc = loc
 
 search = Input('Input', '#Input')
 
-print(search.loc)
 
-print('\n')
+print(search.check_text())
 
-print(search.text)
-
-class Button:
+class Button(Checks):
 
     def __init__(self, text, loc):
+        super().__init__(loc)
         self.text = text
         self.loc = loc
 
 button = Button('Home', '#Home')
 
-print(button.loc)
+print(button.check_text())
 
-print('\n')
-
-print(button.text)
-
-class Title:
+class Title(Checks):
 
     def __init__(self, text, loc):
+        super().__init__(loc)
         self.text = text
         self.loc = loc
 
 title = Title('Title', '#Title')
 
-print(title.loc)
 
-print('\n')
+print(title.check_text())
 
-print(title.text)
-
-class Link:
+class Link(Checks):
 
     def __init__(self, text, loc):
+        super().__init__(loc)
         self.text = text
         self.loc = loc
 
 link = Link('Link', '#Link')
 
-print(link.loc)
 
-print('\n')
-
-print(link.text)
+print(link.check_text())

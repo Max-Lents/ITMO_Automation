@@ -42,3 +42,32 @@ m.addition()
 m.multiplication()
 print('\n')
 
+class Button:
+    def __init__(self, text, type=('Кнопка'), loc=('')):
+        self.text = text
+        self.type = type
+        self.loc = loc
+
+    def click(self):
+        return "Клик по кнопке - {}".format(self.text)
+
+    # экземпляр класса
+text_box = Button('Text Box')
+check_box = Button('Check Box')
+radio = Button('Radio Button')
+web = Button('Web Tables')
+buttons = Button('Buttons')
+links = Button('Links')
+broken_l = Button('Broken Links')
+u_d = Button('Upload and Download')
+    # вызываем метод
+print(text_box.click())
+print(check_box.click())
+print(radio.click())
+print(web.click())
+print(buttons.click())
+print(links.click())
+print(broken_l.click())
+print(u_d.click())
+print('\n')
+
